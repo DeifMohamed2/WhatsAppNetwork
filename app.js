@@ -18,10 +18,13 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 // MongoDB Setup
-mongoose.connect('mongodb://localhost/whatsapp_clone', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  'mongodb+srv://3devWay:1qaz2wsx@cluster0.5orkagp.mongodb.net/ChatApp?retryWrites=true&w=majority&appName=Cluster0',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // Middleware
 app.use(cors());
