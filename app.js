@@ -285,7 +285,7 @@ console.log(`User connected: ${socket.id}`);
 });
 
 // Server Start
-const PORT = 3000;
+const PORT = 3200;
 server.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
